@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0
+
+Re-pinned to **Gen1WildQOL 1.31.1**.
+
+- **A rematch you cannot afford now says what it costs.** If TRAINER REMATCH
+  still refuses on this cart, the refusal names the price on a second page, so
+  the number can be compared against the money on your TRAINER CARD. The bare
+  one-line refusal, with no price on it, means the build being played is older
+  than this one.
+
 ## 1.2.0
 
 Re-pinned to **Gen1WildQOL 1.31.0** and **Gen1WildUI 1.27.1**, for two fixes

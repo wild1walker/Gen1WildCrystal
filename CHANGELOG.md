@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0
+
+Re-pinned to **Gen1WildQOL 1.30.1**, for one crash.
+
+- **Picking QUIT with nothing to save no longer crashes** (Gen1AutoSave). Load
+  a save, open START and choose QUIT before anything has happened and the game
+  stopped with `attempt to call field 'unpack' (a nil value)` instead of
+  showing the prompt. Nothing had changed yet, so there was no save worth
+  offering, and the fallback that hands the row straight back to the game was
+  the broken part: it named `table.unpack`, which the Lua the game runs does
+  not have.
+
+Gen1WildUI stays at 1.27.0, and nothing about the cart itself changed — same
+shell, same finish, same seal, and saves made on 1.0.0 carry straight over.
+
 ## 1.0.0
 
 The first release.

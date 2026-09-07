@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0
+
+Re-pinned to **Gen1WildUI 1.27.2**.
+
+- **"NOTHING LIVES HERE" no longer runs through the box border** on a POKéDEX
+  AREA place with nothing in it.
+
 ## 1.3.0
 
 Re-pinned to **Gen1WildQOL 1.31.1**.

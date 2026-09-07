@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.5.0
+
+Re-pinned to **Gen1WildQOL 1.32.0**. Both changes are TRAINER REMATCH's, and
+both change what happens in a fight.
+
+- **A rematch costs half of what winning pays**, which is four times what it
+  was quoting. Crystal pays a trainer's reward in four quarters where Red pays
+  it once, and this arm had been copying Red's arithmetic — so the stake was an
+  eighth of the purse, not half.
+
+- **MATCH LEVELS now reaches the battle.** It was scaling the *quote* but not
+  the opponent: the levels moved, but their moves stayed the ones they knew at
+  their original level and a trainer scaled up came in already damaged. A
+  matched trainer is now the same opponent Red's is — right stats, right moves,
+  full HP.
+
 ## 1.4.0
 
 Re-pinned to **Gen1WildUI 1.27.2**.

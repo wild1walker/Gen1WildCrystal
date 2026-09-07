@@ -1,0 +1,40 @@
+name: Checks
+
+# The gate that can be run without a gen1recomp checkout: cart.json is shaped
+# the way the engine's own manifest grammar wants it, label.png is still what
+# the tool draws from the art, and every pinned mod's digest still matches the
+# release it names.
+#
+# The pins are checked twice on purpose.  Here it is a plain fetch-and-hash, so
+# a pin that has drifted fails before anything is built; cart-release.yml then
+# runs `cartkit validate . --online --strict`, which is the engine's own
+# opinion of the same file.  Each pinned mod has its own checks in its own
+# repository.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
+      - name: The cart agrees with itself and the art is current
+        run: python3 tools/check.py --online

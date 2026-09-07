@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.2.0
+
+Re-pinned to **Gen1WildQOL 1.31.0** and **Gen1WildUI 1.27.1**, for two fixes
+that are Crystal's.
+
+- **TRAINER REMATCH no longer says you cannot afford it.** Every rematch was
+  refused with "You don't have enough money", whatever the purse held: the Gold
+  arm was reading the field *Red* keeps money in, so it saw 0 every time.
+
+- **BILL'S BOX reaches the PC menu.** Crystal has two PC menus where Red has
+  one, and only the inner one carried the rename — so the row you actually
+  press first still said BILL'S PC.
+
+Nothing about the cart itself changed: same shell, same finish, same seal, and
+a save made on 1.1.0 carries straight over.
+
 ## 1.1.0
 
 Re-pinned to **Gen1WildQOL 1.30.1**, for one crash.

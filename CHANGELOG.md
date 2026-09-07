@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.9.0
+
+Re-pinned to **Gen1WildUI 1.28.0**.
+
+- **The GLOBAL BOX.** Past BOX 14 the box header keeps going: **GLOBAL 1**,
+  and another page every time the last one fills. It is one box shared with
+  every other save on your installation — so the POKéMON you sent from Wild
+  Green are sitting there waiting, and anything you send from here is waiting
+  on Wild Green. There is a **SEND** row on a POKéMON's own popup in the party
+  menu too.
+
+  It lives **inside the saves**, so it syncs, backs up and rolls back with
+  them. What may live in it is the **Time Capsule's** rule, reused rather than
+  restated: a Johto POKéMON, one holding MAIL, an EGG, or one that knows a
+  move RED never heard of is refused, with the reason. Crystal converts on the
+  way in and on the way out.
+
 ## 1.8.0
 
 Re-pinned to **Gen1WildQOL 1.32.1**.

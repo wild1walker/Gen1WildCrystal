@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "wild_crystal",
   "title": "Wild Crystal",
-  "version": "1.10.1",
+  "version": "1.11.0",
   "author": "wild1walker",
   "repo": "wild1walker/Gen1WildCrystal",
   "summary": "Crystal, played as its own version: the Gen1Wild suite pinned whole, on Johto.",
@@ -24,8 +24,8 @@
       "id": "gen1_wild_ui",
       "source": "github",
       "repo": "wild1walker/Gen1WildUI",
-      "version": "1.29.1",
-      "sha256": "ebee85b716e924d8fff7ed80f0248ddc6c656c5f3a83f4bc0cae0ded41a4a7b5"
+      "version": "1.30.0",
+      "sha256": "e0a6a3157aad7f43364a393a3dd558a8c4919672fe0b83902550f6ffd473a09b"
     }
   ],
   "load_order": [

@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.9.1
+
+Re-pinned to **Gen1WildUI 1.28.1**.
+
+- **A POKéMON sent from Wild Green is in the GLOBAL BOX here.** It wasn't: the
+  other cartridge's outbox was invisible, so the box read empty on every save
+  but the one you were in. The bundle files each vendored mod's save data
+  under a prefixed key, and the box was looking for the unprefixed one when it
+  read another save. It goes by the shape of what it finds now, not the name.
+
 ## 1.9.0
 
 Re-pinned to **Gen1WildUI 1.28.0**.

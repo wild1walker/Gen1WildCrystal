@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.16.0
+
+Re-pinned to **Gen1WildUI 1.33.0**. Both fixes are this cart's.
+
+- **Some trainers kept their white square.** Reported with a SAILOR standing
+  in a white box beside a player whose box was gone. The cut-out that lifts a
+  trainer off its background was gated on a colour COUNT — four, which is a
+  2bpp cart pic exactly and which replacement art blows straight past — so
+  every replaced trainer was refused, and the refusal was cached for the rest
+  of the session. The count was standing in for "is this a figure in a field",
+  which the BORDER answers directly: art sitting in a uniform field is lifted
+  out of it, and art that runs to its own edge is still left alone.
+
+- **The #DEX says where a gift came from.** Reported twice — the starters
+  missing from the AREA search, and EEVEE saying NO RECORD REMAINS after being
+  met on Route 34. Bill's house is on Route 34, so both reports are the same
+  POKéMON: one somebody hands you, which is in no wild table and evolves from
+  nothing. The data was never missing; there was no reading for a gift. The
+  page reads the cart's own `givepoke` now.
+
 ## 1.15.0
 
 Re-pinned to **Gen1WildUI 1.32.0**.

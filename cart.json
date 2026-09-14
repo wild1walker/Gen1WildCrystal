@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "wild_crystal",
   "title": "Wild Crystal",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "author": "wild1walker",
   "repo": "wild1walker/Gen1WildCrystal",
   "summary": "Crystal, played as its own version: the Gen1Wild suite pinned whole, on Johto.",
@@ -10,15 +10,15 @@
   "finish": "sparkle+holo",
   "label": "label.png",
   "base": "crystal",
-  "engine": ">=0.1.37 <2.0.0",
+  "engine": ">=0.2.57 <2.0.0",
   "seal": "sealed",
   "mods": [
     {
       "id": "gen1_wild_qol",
       "source": "github",
       "repo": "wild1walker/Gen1WildQOL",
-      "version": "1.32.2",
-      "sha256": "3dd8f6fca9ad533c9d3d2cbd2564c236104482cb473032aa77b57fa761e342d5"
+      "version": "1.33.0",
+      "sha256": "8c43aebbf60aa8972cd011638d6f5b0ba1853795335da395c883f806950ecd6f"
     },
     {
       "id": "gen1_wild_ui",

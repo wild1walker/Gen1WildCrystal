@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.18.0
+
+Re-pinned to **Gen1WildQOL 1.33.0**, and the engine floor moves with it.
+
+- **This cart now needs gen1recomp `0.2.57` or newer**, up from `0.1.37`.
+
+  Gen1WildQOL used to carry a shim that scoped this cartridge's save.
+  `src/core/gen2/Save.lua` named its file out of the VERSION alone, so a
+  Crystal cart read and wrote the *base game's* Crystal playthrough — and
+  registered its slot in the base game's launcher list on the way, so a
+  Crystal you had never started grew a save. The shim rewrote those paths on
+  their way to disk.
+
+  The engine does it itself as of `0.2.57`, and to the same filenames, so the
+  shim is gone. Two layers scoping one path is how a fix becomes the next bug.
+  The floor rises with it because on an older build there would now be nothing
+  doing the job at all — and that is the one thing worth being strict about
+  here, since what it costs is a playthrough.
+
+  **No save moves.** Your Wild Crystal save is exactly where it was; the
+  engine writes precisely where the shim wrote.
+
 ## 1.17.0
 
 Re-pinned to **Gen1WildUI 1.34.0**.

@@ -1,5 +1,39 @@
 # Changelog
 
+## 1.19.0
+
+Re-pinned to **Gen1WildUI 1.35.0**. The arena, and this is the cartridge it
+was reported on.
+
+- **The battle backdrop is one photograph at one scale again.** Reported with
+  a screenshot at BATTLE SIZE = FILL: a crisp rectangle of scenery in the
+  middle of the screen and a bigger, blurrier copy of the same scene around
+  it, with a hard seam between them.
+
+  The field is painted on the battle surface and the engine scales that
+  surface to the window; the bars around it were being filled by fitting the
+  same picture to the *whole window*, which is a larger scale. One photograph
+  at two magnifications, joined at the surface's edge. The bars take the
+  surface's own scale and alignment now, so the whole screen is one continuous
+  image — and nothing is stretched to reach, so a bar the picture cannot cover
+  keeps the surround's colour rather than a blown-up smear.
+
+- **The backdrop is chosen for the shape of the screen, not the setting.**
+  BATTLE LAYOUT picks the surface; the art used to be picked to match it,
+  which only works while the surface is the whole picture. As soon as your
+  window is wider there are side bars, and the 160×144 art has nothing outside
+  itself to put in them. The 304×144 art has 72 real columns each side, so
+  that is what loads — on the classic layout too, centred so the battlefield
+  itself is exactly the picture it always was.
+
+  BATTLE SIZE = FILL and FIXED both behave properly now, on Johto as well as
+  Kanto, because the rule reads the shape of what has to be covered rather
+  than which option you set.
+
+  One trade worth knowing: Gold's recoloured town roofs exist only at 160×144,
+  so on a wide window a town battle falls through to the plain scene — the
+  right place, Kanto's roof colours.
+
 ## 1.18.0
 
 Re-pinned to **Gen1WildQOL 1.33.0**, and the engine floor moves with it.
